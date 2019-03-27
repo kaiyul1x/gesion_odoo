@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <record id="carousel_view_project_kanban_inherited" model="ir.ui.view">
+        <field name="name">project.project.carousel.kanban.inherited</field>
+        <field name="model">project.project</field>
+        <field name="inherit_id" ref="project.view_project_kanban"/>
+        <field name="priority">26</field>
+        <field name="arch" type="xml">
+            <xpath expr="//div[contains(@class, 'o_project_kanban_box')]/div[last()]" position="before">
+                <div attrs="{'invisible': []}" class="o_project_kanban_box">
+                    <a  name="%(gesion_task_carousel_view_action)d" type="action" target="new">
+                        <span class="o_label">Carousel</span>
+                    </a>
+                </div>
+            </xpath>
+        </field>
+    </record>
+</odoo>

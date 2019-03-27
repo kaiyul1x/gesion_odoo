@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <record id="gesion_organization_tree_view_action" model="ir.actions.client">
+        <field name="name">Gesion_Organization_Tree_View</field>
+        <field name="tag">gesion_dms_views.organization_tree_view</field>
+    </record>
+    <!--组织机构树状图-->
+    <menuitem id="gesion_organization_tree_view" name="Organization Tree View" parent="menu_organization_management"
+                  action="gesion_organization_tree_view_action"  sequence="1" groups="gesion_dms.group_gesion_ermp_employee"/>
+
+    <record id="gesion_task_carousel_view_action" model="ir.actions.client">
+        <field name="name">Gesion_Task_Carousel_View</field>
+        <field name="tag">gesion_dms_views.task_carousel_view</field>
+    </record>
+</odoo>

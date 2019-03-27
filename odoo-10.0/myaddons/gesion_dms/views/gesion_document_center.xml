@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+        <!--文档中心-->
+        <menuitem name="Document Center" id="menu_repository" web_icon="gesion_dms,static/description/icon.png"
+                  groups="gesion_dms.group_gesion_dms_reader"/>
+        <!--文档管理-->
+        <menuitem name="Document Management" id="menu_document_management" parent="menu_repository"
+                  groups="gesion_dms.group_gesion_dms_reader"/>
+        <!--组织机构管理-->
+        <menuitem name="Organization Management" id="menu_organization_management" parent="menu_repository"
+                  groups="gesion_dms.group_gesion_ermp_employee"/>
+        <!--文档项目管理-->
+        <menuitem name="Project &amp; Document Settings" id="menu_document_project_management" parent="menu_repository"
+                  groups="gesion_dms.group_gesion_ermp_employee"/>
+        <!--配置-->
+        <menuitem name="Settings" id="menu_versions_management" parent="menu_repository"
+                  groups="gesion_dms.group_gesion_dms_general_manager" />
+        <!--权限控制-->
+        <!--<menuitem id="gesion_dms_access_control" name="Access Control" parent="menu_versions_management"-->
+                  <!--action="muk_dms_access.action_dms_groups" />-->
+        <!--存储数据-->
+        <menuitem id="menu_gesion_dms_data_database" name="Database Data" parent="menu_versions_management"
+                  action="muk_dms.action_dms_data_database" groups="gesion_dms.group_gesion_dms_admin"/>
+        <!--文件锁-->
+        <menuitem id="menu_gesion_dms_lock" name="Document Locks" parent="menu_versions_management"
+                  action="muk_dms.action_dms_lock" groups="gesion_dms.group_gesion_dms_general_manager"/>
+        <!--存储设置-->
+        <menuitem id="menu_gesion_dms_settings" name="Storage Settings" parent="menu_versions_management"
+                  action="muk_dms.action_dms_settings" groups="gesion_dms.group_gesion_dms_admin"/>
+    </data>
+</odoo>
+  

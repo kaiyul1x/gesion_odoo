@@ -1,0 +1,66 @@
+<?xml version="1.0"?>
+<odoo>
+    <data>
+        <record model="ir.ui.view" id="task_stage_submit_wizard_view">
+            <field name="name">线索</field>
+            <field name="model">gesion_dms.task.stage.approve</field>
+            <field name="arch" type="xml">
+                <form string="CRM向导" >
+                    <group col="2" colspan="2">
+                        <field name="title"/>
+                    </group>
+                    <group col="2" colspan="2">
+                        <field name="remarks"/>
+                    </group>
+                    <footer>
+                        <button name="agree" string="提交" type="object" class="oe_highlight"/>
+                        or
+                        <button string="取消" class="oe_link" special="cancel" />
+                    </footer>
+                </form>
+            </field>
+        </record>
+        <record id="task_stage_submit_action" model="ir.actions.act_window">
+            <field name="name">Approving</field>
+            <field name="type">ir.actions.act_window</field>
+            <field name="res_model">gesion_dms.task.stage.approve</field>
+            <field name="view_type">form</field>
+            <field name="view_mode">form</field>
+            <field name="view_id" ref="task_stage_submit_wizard_view"/>
+            <field name="target">new</field>
+        </record>
+
+        <record model="ir.ui.view" id="task_stage_check_wizard_view">
+            <field name="name">线索</field>
+            <field name="model">gesion_dms.task.stage.approve</field>
+            <field name="arch" type="xml">
+                <form string="CRM向导" >
+                    <group col="2" colspan="2">
+                        <field name="title"/>
+                    </group>
+                    <group col="2" colspan="2">
+                        <field name="remarks"/>
+                    </group>
+                    <footer>
+                        <button name="agree" string="提交" type="object" class="oe_highlight"/>
+                        or
+                        <button name="refuse" string="驳回" type="object" class="oe_highlight" />
+                        or
+                        <button string="取消" class="oe_link" special="cancel" />
+                    </footer>
+                </form>
+            </field>
+        </record>
+        <record id="task_stage_check_action" model="ir.actions.act_window">
+            <field name="name">Approving</field>
+            <field name="type">ir.actions.act_window</field>
+            <field name="res_model">gesion_dms.task.stage.approve</field>
+            <field name="view_type">form</field>
+            <field name="view_mode">form</field>
+            <field name="view_id" ref="task_stage_check_wizard_view"/>
+            <field name="target">new</field>
+        </record>
+
+    </data>
+</odoo>
+

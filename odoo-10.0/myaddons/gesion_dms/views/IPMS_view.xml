@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+        <record model="ir.actions.act_url" id="action_IPMS_url">
+            <field name="name">Open IPMS.com</field>
+            <field name="url">http://ipms.gesion.net:81/#/login</field>
+            <field name="target">new</field>
+        </record>
+
+
+        <menuitem name="IPMS" id="menu_open_IPMS" web_icon="gesion_dms,static/description/bao.png" action="action_IPMS_url"/>
+
+    </data>
+</odoo>

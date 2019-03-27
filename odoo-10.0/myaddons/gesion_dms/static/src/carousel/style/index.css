@@ -1,0 +1,259 @@
+html, body {
+	width: 100%;
+	height: 100%;
+	font-size: 14px;
+}
+
+h1, h2, h3, h4, h5, h6, ul, p {
+	margin: 0;
+	padding: 0;
+}
+
+ul {
+	list-style: none;
+}
+
+.tl {
+	text-align: left;
+}
+
+.tc {
+	text-align: center;
+}
+
+.tr {
+	text-align: right;
+}
+
+.b-g {
+	background-color: #55c36b !important;
+}
+
+.b-r {
+	background-color: #ff1522 !important;
+}
+
+.c-g {
+	color: #55c36b !important;
+}
+
+.c-r {
+	color: #ff1522 !important;
+}
+
+.w-200 {
+	width: 200px !important;
+}
+
+.ver {
+	height: 300px;
+	overflow: hidden;
+}
+
+.project {
+	padding: 10px;
+	box-sizing: border-box;
+}
+
+.project__title {
+	margin: 0;
+	color: #666;
+	font-size: 22px;
+}
+
+.project__nav {
+	overflow: auto;
+	margin: 10px 0;
+}
+
+.project__nav li {
+	float: left;
+	padding: 3px 15px;
+	background-color: white;
+	color: #21b799;
+	text-align: center;
+	border: 1px solid #21b799;
+}
+
+.project__nav li:hover {
+	cursor: pointer;
+}
+
+.project__nav li:nth-child(2) {
+	border-left: none;
+	border-right: none;
+}
+
+.project__nav li.active {
+	background-color: #21b799;
+	color: white;
+}
+
+.project {
+	width: 100%;
+	height: 100%;
+}
+
+.content {
+	width: 100%;
+	min-width: 1920px;
+	height: 800px;
+	overflow-y: scroll;
+	position: relative;
+	overflow-x: auto;
+}
+
+.content > div {
+	float: left;
+}
+
+#SEQ li:hover {
+	cursor: pointer;
+}
+
+.nav {
+	width: 190px;
+}
+
+.nav span {
+	padding: 0 10px;
+}
+
+.nav-title {
+	text-align: center;
+    min-height: 30px;
+    line-height: 30px;
+    width: 100%;
+    background-color: #006610;
+    color: white;
+    border-right: 1px solid #eee;
+}
+
+.scroll {
+	position: relative;
+	//padding-top: 20px;
+	box-sizing: border-box;
+}
+
+.scroll ul {
+	overflow: auto;
+	margin:0;
+	font-size: 12px;
+}
+
+.scroll li { 
+	float: left;
+	text-align: center;
+	min-height: 30px;
+	line-height: 30px;
+	width: 100px;
+    white-space: nowrap;
+    overflow: hidden;
+}
+
+.scroll__head {
+	margin: 0;
+	background-color: #006610;
+	color: white;
+}
+
+.scroll__head li {
+	border-right: 1px solid #eee;
+}
+
+.scroll__content ul li {
+	border-bottom: 1px solid #666;
+	border-right: 1px solid #666;
+	position: relative;
+}
+
+.scroll__content ul li:first-child {
+	border-left: 1px solid #666;
+}
+
+.scroll__content ul li .t-progress {
+	width: 80px;
+	height: 16px;
+	border: 1px solid #c6e3ca;
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	margin-left: -40px;
+	margin-top: -8px;
+	line-height: 16px;
+}
+
+.scroll__content ul li .t-progress > div {
+	height: 100%;
+	background-color: #666666;
+}
+
+.icon-face {
+	position: relative;
+	top: -1px;
+	margin-right: 3px;
+}
+
+.tree, .tree ul {
+    margin:0;
+    padding:0;
+    list-style:none
+}
+.tree ul {
+    margin-left:1em;
+    position:relative
+}
+.tree ul ul {
+    margin-left:.5em
+}
+.tree ul:before {
+    content:"";
+    display:block;
+    width:0;
+    position:absolute;
+    top:0;
+    bottom:0;
+    left:0;
+    border-left:1px solid
+}
+.tree li {
+    margin:0;
+    padding:0 1em;
+    line-height:2em;
+    color: #333;
+    font-weight:700;
+    position:relative
+}
+.tree ul li:before {
+    content:"";
+    display:block;
+    width:10px;
+    height:0;
+    border-top:1px solid;
+    margin-top:-1px;
+    position:absolute;
+    top:1em;
+    left:0
+}
+.tree ul li:last-child:before {
+    background:#fff;
+    height:auto;
+    top:1em;
+    bottom:0
+}
+.indicator {
+    margin-right:5px;
+}
+.tree li a {
+    text-decoration: none;
+    color:#369;
+}
+.tree li button, .tree li button:active, .tree li button:focus {
+    text-decoration: none;
+    color:#369;
+    border:none;
+    background:transparent;
+    margin:0px 0px 0px 0px;
+    padding:0px 0px 0px 0px;
+    outline: 0;
+}
